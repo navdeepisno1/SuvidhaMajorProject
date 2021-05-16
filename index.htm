@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link href="style.css" type="text/css" rel="stylesheet" />
+    <title>Suvidha</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+
+</head>
+
+<body alink="#fff" vlink="#fff" link="#fff">
+
+    <nav class="navbar navbar-expand-sm navbar-dark fixed-top" style="background-color: rgba(0, 0, 0, 0.6);">
+        <a class="navbar-brand" href="#">Suvidha</a>
+        <ul class="navbar-nav">
+            <li class="nav-item">
+
+                <a class="nav-link" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+                <div class="nav-link" data-target="#modalContact" data-toggle="modal" style="cursor: pointer;">Contact</div>
+            </li>
+        </ul>
+        <div data-toggle="modal" data-target="#myModal" style="position: fixed; background-color: #fff;color:gray;right: 12px; top: 12px;padding: 3px 12px;border-radius: 3px;cursor: pointer;">
+            <i class="fas fa-sign-in-alt"></i> Login
+        </div>
+    </nav>
+
+    <div class="modal fade" id="modalContact">
+        <div class="modal-dialog">
+            <div class="modal-content">
+
+                <!-- Modal Header -->
+                <div class="modal-header">
+                    <h4 class="modal-title">Contact Us</h4>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+
+                <!-- Modal body -->
+                <div class="modal-body">
+                    <div class="container">
+                        <b>Address:</b><br> XYZ Road ,P City
+                        <br>
+                        <br>
+                        <img class="img-responsive" src="https://miro.medium.com/max/3188/1*FbzQStUzSsLChBJE9108hg.png" width="425">
+                    </div>
+                </div>
+
+                <!-- Modal footer -->
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- The Modal -->
+    <div class="modal fade" id="myModal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+
+                <!-- Modal Header -->
+                <div class="modal-header">
+                    <h4 class="modal-title">Login</h4>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+
+                <!-- Modal body -->
+                <div class="modal-body">
+                    <form action="/action_page.php">
+                        <div class="form-group">
+                            <label for="uname">Username:</label>
+                            <input type="text" class="form-control" placeholder="D20XXXXX/P20XXXXX" id="uname">
+                        </div>
+                        <div class="form-group">
+                            <label for="pwd">Password:</label>
+                            <input type="password" class="form-control" placeholder="Enter password" id="pwd">
+                        </div>
+                        <div class="form-group form-check">
+                            <label class="form-check-label">
+                            <input class="form-check-input" type="checkbox"> Remember me
+                          </label>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                    </form>
+                </div>
+
+                <!-- Modal footer -->
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="container-landscape">
+        <center>
+            Please Turn To Portrait Mode to View This Website...
+            <br />
+            <img src="images/icon_rotate_device.gif" style="width: 100px" />
+        </center>
+    </div>
+
+    <div class="body-bg"></div>
+    <div class="container-profile" id="profile">
+        <div class="square-container">
+            <div class="square-container-sq-0"></div>
+            <div class="square-container-sq-1"></div>
+            <div class="square-container-sq-2"></div>
+            <div class="square-container-sq-3"></div>
+            <img src="images/icon_doctor.png" class="square-container-img-0" alt="Navdeep Sharma Profile Image" />
+            <!--<div class="square-container-sq-4"></div>-->
+        </div>
+        <div class="about-container">
+            Stay Home !! <br> Save Lives !!
+            <!--Navdeep Sharma<br /> 701-5798-026-->
+        </div>
+        <div class="circle-container">
+            <div class="circle-container-circle-0"></div>
+            <div class="circle-container-circle-1"></div>
+            <div class="circle-container-circle-2"></div>
+            <div class="circle-container-circle-3"></div>
+            <a href="tel:7015798026"><img src="images/icon_video_call.png" class="circle-container-img-0" alt="Dialer Icon" /></a>
+        </div>
+    </div>
+
+    <div class="container-social">
+        <br>
+        <a href="https://www.facebook.com/profile.php?id=100022623902901">
+            <div><img src="images/icon_fb.png" /></div>
+        </a><br />
+        <a href="mailto:navdeepiso1@gmail.com">
+            <div><img src="images/icon_gmail.png" /></div>
+        </a><br />
+        <a href="https://www.instagram.com/navdeepisno1/">
+            <div><img src="images/icon_instagram.png" /></div>
+        </a><br>
+    </div>
+</body>
+
+</html>
